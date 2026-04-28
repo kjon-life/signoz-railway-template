@@ -1,4 +1,6 @@
 FROM signoz/signoz:v0.118.0
 
+USER root
+
 COPY signoz/prometheus.yml /root/config/prometheus.yml
 COPY dashboards /root/config/dashboards
